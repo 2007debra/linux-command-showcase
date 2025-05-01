@@ -28,13 +28,14 @@ user.
 
  3 Now I can use my ln command to create the hard link `sudo  ln /home/debbie/linux-commands-showcase/myfolder/docs/images/rose.jpeg /home/david/myfolder/images`
 
-📷 [Click here to view the hardlink screenshot](myfolder/docs/images/hardlink-proof.png)
+📷 [Click here to view the hardlink screenshot](./myfolder/docs/images/hardlink-proof.png)
 
 ## Task 2 soft link:
 Since soft link is not limited to files like hard links I am making a soft link of `myfolder` under the user `debbie` to `myfolder` in the user `david`
 
 ## Command used:
 
-sudo ln -s /home/debbie/linux-commands-showcase/myfolder /home/david/myfolder 
+`sudo ln -s /home/debbie/linux-commands-showcase/myfolder /home/david/myfolder` 
  
+📷 [Click here to view the softlink screenshot](./myfolder/docs/images/softlink-proof.png)
 
