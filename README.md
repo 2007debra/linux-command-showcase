@@ -39,3 +39,40 @@ Since soft link is not limited to files like hard links I am making a soft link 
  
 📷 [Click here to view the softlink screenshot](./myfolder/docs/images/softlink-proof.png)
 
+### Special Permissions in Linux: SUID, SGID, and Sticky Bit
+
+## Task 1 SUID (Set User ID)  
+
+Allows users to run an executable file as if they are the owner of the file
+
+# Steps taken:
+
+1 Create a file named suidfile using command touch 
+
+2 using `chmod 4664 suidfile`
+
+
+## Task 2 SUIG (Set Group ID)
+
+When set on a directory, all new files inside it inherit the group of the directory, not the user’s default group.
+
+
+# Steps taken:
+
+1 Create a file named suigfile using command touch
+
+2 using `chmod 2664 suidfile`
+
+## Task 3 Sticky bit 
+Used on shared directories to allow users to create files but only delete their own files.
+
+
+# Steps taken:
+
+1 Create a file named suigfile using command touch
+
+2 using `chmod 1664 stickybitfile`
+
+Note I did not add execute permissions for any user groups which is why the permissions have been capitalised
+
+📷 [Click here to view the Special Permissions Proof](./myfolder/docs/images/special-permissions-proof.png)
