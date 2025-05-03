@@ -76,3 +76,37 @@ Used on shared directories to allow users to create files but only delete their 
 Note I did not add execute permissions for any user groups which is why the permissions have been capitalised
 
 📷 [Click here to view the Special Permissions Proof](./myfolder/docs/images/special-permissions-proof.png)
+
+### Filtering files based on size, name, permissions and time 
+
+### by size
+
+Command used: `find . -size +1k` to find files more than 1 kilobyte for less than 1 kilobyte use `-1k` 
+
+### by name
+
+Command used: `find . -name 'suigfile'`  I can also use `-i` to make it not case sensitive 
+
+### by file type
+
+Command used: `find . -name '*.png'`
+
+### by permission
+
+Command used: `find . -perm /4000` to find files with SUID permission and `2000` and `1000` for SUIG and Sticky bit permissions
+
+To find for any special permissions use `7000` because the value of all permissions together is `4+2+1= 7` 
+
+Also `/4000` means any of these permissions `-4000` at least these permissions and `4000` exactly those permissions
+
+### by time
+
+Command used: `find . -mtime -2` finds files modified in the last 2 days to find for more than 2 days use `+2`
+
+`find . -mmin -10` finds files modified in the last 10 mins if it was more than 10 mins it would be `+10`
+
+`find . -atime -2` finds files based on last access in this case that is in the last 2 days `+2` would mean more than 2 days
+
+📷 [Click here to view the Filter screenshot](./myfolder/docs/images/filter-proof.png)
+📷 [Click here to view the Filter screenshot](./myfolder/docs/images/filter-proof2.png)
+
