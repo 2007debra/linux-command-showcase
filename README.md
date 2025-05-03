@@ -108,5 +108,5 @@ Command used: `find . -mtime -2` finds files modified in the last 2 days to find
 `find . -atime -2` finds files based on last access in this case that is in the last 2 days `+2` would mean more than 2 days
 
 📷 [Click here to view the Filter screenshot](./myfolder/docs/images/filter-proof.png)
-📷 [Click here to view the Filter screenshot](./myfolder/docs/images/filter-proof2.png)
+📷 [Click here to view the Filter screenshot](./myfolder/docs/images/filter-proof3.png)
 
