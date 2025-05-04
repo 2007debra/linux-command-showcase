@@ -153,8 +153,11 @@ I only ended up sorting the countries file so it still has repeated values then 
 
 Command used: 
 `diff countries201 singlecountries` no output was given cause there is no difference
+
 `sdiff countries201 singlecountries` gave me the output of both files side by side so I can see there is no difference 
+
 `diff countries countries201` uses < and > signs to show what is in file 1 and what is in file 2 `-c` option can also be used to show more context about sorrounding text using `+/-` signs
+
 `sdiff countries countries201` shows both files side by side and what is missing in this line that is present in the other line
  
 📷 [Click here to view the Search and Replace screenshot](./myfolder/docs/images/search-and-replace.png)
