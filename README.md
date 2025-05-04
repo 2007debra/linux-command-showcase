@@ -75,21 +75,21 @@ Note I did not add execute permissions for any user groups which is why the perm
 
 📷 [Click here to view the Special Permissions Proof](./myfolder/docs/images/special-permissions-proof.png)
 
-## Filtering files based on size, name, permissions and time 
+# Filtering files based on size, name, permissions and time 
 
-### by size
+## by size
 
 Command used: `find . -size +1k` to find files more than 1 kilobyte for less than 1 kilobyte use `-1k` 
 
-### by name
+## by name
 
 Command used: `find . -name 'suigfile'`  I can also use `-i` to make it not case sensitive 
 
-### by file type
+## by file type
 
 Command used: `find . -name '*.png'`
 
-### by permission
+## by permission
 
 Command used: `find . -perm /4000` to find files with SUID permission and `2000` and `1000` for SUIG and Sticky bit permissions
 
@@ -97,7 +97,7 @@ To find for any special permissions use `7000` because the value of all permissi
 
 Also `/4000` means any of these permissions `-4000` at least these permissions and `4000` exactly those permissions
 
-### by time
+## by time
 
 Command used: `find . -mtime -2` finds files modified in the last 2 days to find for more than 2 days use `+2`
 
@@ -105,11 +105,11 @@ Command used: `find . -mtime -2` finds files modified in the last 2 days to find
 
 `find . -atime -2` finds files based on last access in this case that is in the last 2 days `+2` would mean more than 2 days
 
-### by type
+## by type
 
 Command used: `find . -type f` this is to find regular files `d` to find directories 
 
-### Filtering with and, or, not 
+## Filtering with and, or, not 
 
 Commands used: 
 
@@ -122,3 +122,43 @@ Commands used:
 📷 [Click here to view the Filter the type, OR, NOT screenshot](./myfolder/docs/images/filter-proof3.png)
 📷 [Click here to view the  AND filter screenshot](./myfolder/docs/images/and-filter-proof.png)
 
+# Compare & Manipulate file content
+
+## Search and replace a particular word in a file
+
+Command used: `sed 's/June/April/g' logs.txt` however this just modifies the file it doesnt do any permanent damage unless I use option `-i`
+
+## To cut and extract information from a file
+
+Command used: `cut -d " " -f 3 logs.txt > time.txt` to extract a copy of the 3rd column in logs.txt file which storres the value of times and place in another file the time.txt file
+
+## To cut and extract information from a file
+
+
+Command used: `cut -d " " -f 3 logs.txt > time.txt` to extract a copy of the 3rd column in logs.txt file which storres the value of times and place in another file the time.txt file
+
+## Arranging files alphabetically
+
+Command used: `sort countries` you can use option `-o` to overwrite the output in an existing file so that I dont have to create a new file again for arranged countries `sort countries -o countries`
+
+## Removing repeating lines nxt to each other
+
+Command used: `uniq countries`
+
+**NOTE** these 2 commands could have been combined to give the same output `sort countries | uniq` also know that it was neccessary to sort so repeating countries would be on lines nxt to each other then we we could apply uniq command
+
+## Comparison
+
+I only ended up sorting the countries file so it still has repeated values then I stored the unique values in a file called singlecountries using the command in the NOTE section I created a file with the exact same content on singlecountries and stored it in a file called countries201. These are the files I would be using for my comparison excercise.
+
+Command used: 
+`diff countries201 singlecountries` no output was given cause there is no difference
+`sdiff countries201 singlecountries` gave me the output of both files side by side so I can see there is no difference 
+`diff countries countries201` uses < and > signs to show what is in file 1 and what is in file 2 `-c` option can also be used to show more context about sorrounding text using `+/-` signs
+`sdiff countries countries201` shows both files side by side and what is missing in this line that is present in the other line
+ 
+📷 [Click here to view the Search and Replace screenshot](./myfolder/docs/images/search-and-replace.png)
+📷 [Click here to view the Cut and Extract screenshot](./myfolder/docs/images/cut-extract.png)
+📷 [Click here to view the Sort and Uniq command screenshot](./myfolder/docs/images/CMD2-3-4.png)
+📷 [Click here to view the Comparison screenshot](./myfolder/docs/images/Comparison-proof.png)
+📷 [Click here to view the Diff command using option c screenshot](./myfolder/docs/images/option-c-diff.png)
