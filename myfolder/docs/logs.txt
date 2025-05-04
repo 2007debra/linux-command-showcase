@@ -1,15 +1,15 @@
-Apr 30 12:00:01 ubuntu CRON[1234]: (root) CMD (backup.sh)
-Apr 30 12:00:03 ubuntu sshd[1255]: Accepted password for alice from 192.168.1.10 port 55422 ssh2
-Apr 30 12:05:12 ubuntu kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44 SRC=203.0.113.4 DST=192.168.1.15
-Apr 30 12:10:30 ubuntu systemd[1]: Started Daily Cleanup.
-Apr 30 12:15:00 ubuntu sudo:     bob : TTY=pts/0 ; PWD=/home/bob ; USER=root ; COMMAND=/bin/systemctl restart apache2
-Apr 30 12:20:22 ubuntu sshd[1299]: Failed password for invalid user admin from 198.51.100.23 port 33221 ssh2
-Apr 30 12:23:45 ubuntu kernel: Disk quota exceeded on /dev/sda1
-Apr 30 12:30:01 ubuntu CRON[1301]: (root) CMD (logrotate)
-Apr 30 12:33:50 ubuntu systemd[1]: Stopping Apache2 Web Server...
-Apr 30 12:34:00 ubuntu systemd[1]: apache2.service: Main process exited, code=exited, status=1/FAILURE
-Apr 30 12:34:01 ubuntu systemd[1]: apache2.service: Failed with result 'exit-code'.
-Apr 30 12:45:15 ubuntu sshd[1350]: Accepted publickey for devuser from 203.0.113.20 port 50221 ssh2
-Apr 30 12:47:10 ubuntu kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44 SRC=198.51.100.4 DST=192.168.1.16
-Apr 30 12:50:33 ubuntu sudo:     alice : TTY=pts/1 ; PWD=/home/alice ; USER=root ; COMMAND=/usr/bin/apt update
-Apr 30 13:00:00 ubuntu CRON[1400]: (root) CMD (/usr/local/bin/daily_scan.sh)
+April 30 12:00:01 ubuntu CRON[1234]: (root) CMD (backup.sh)
+April 30 12:00:03 ubuntu sshd[1255]: Accepted password for alice from 192.168.1.10 port 55422 ssh2
+April 30 12:05:12 ubuntu kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44 SRC=203.0.113.4 DST=192.168.1.15
+April 30 12:10:30 ubuntu systemd[1]: Started Daily Cleanup.
+April 30 12:15:00 ubuntu sudo:     bob : TTY=pts/0 ; PWD=/home/bob ; USER=root ; COMMAND=/bin/systemctl restart apache2
+April 30 12:20:22 ubuntu sshd[1299]: Failed password for invalid user admin from 198.51.100.23 port 33221 ssh2
+April 30 12:23:45 ubuntu kernel: Disk quota exceeded on /dev/sda1
+April 30 12:30:01 ubuntu CRON[1301]: (root) CMD (logrotate)
+April 30 12:33:50 ubuntu systemd[1]: Stopping Apache2 Web Server...
+April 30 12:34:00 ubuntu systemd[1]: apache2.service: Main process exited, code=exited, status=1/FAILURE
+April 30 12:34:01 ubuntu systemd[1]: apache2.service: Failed with result 'exit-code'.
+April 30 12:45:15 ubuntu sshd[1350]: Accepted publickey for devuser from 203.0.113.20 port 50221 ssh2
+April 30 12:47:10 ubuntu kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44 SRC=198.51.100.4 DST=192.168.1.16
+April 30 12:50:33 ubuntu sudo:     alice : TTY=pts/1 ; PWD=/home/alice ; USER=root ; COMMAND=/usr/bin/apt update
+April 30 13:00:00 ubuntu CRON[1400]: (root) CMD (/usr/local/bin/daily_scan.sh)

@@ -159,6 +159,6 @@ Command used:
  
 📷 [Click here to view the Search and Replace screenshot](./myfolder/docs/images/search-and-replace.png)
 📷 [Click here to view the Cut and Extract screenshot](./myfolder/docs/images/cut-extract.png)
-📷 [Click here to view the Sort and Uniq command screenshot](./myfolder/docs/images/CMD2-3-4.png)
+📷 [Click here to view the Sort and Uniq command screenshot](./myfolder/docs/images/CM2-3-4.png)
 📷 [Click here to view the Comparison screenshot](./myfolder/docs/images/Comparison-proof.png)
 📷 [Click here to view the Diff command using option c screenshot](./myfolder/docs/images/option-c-diff.png)
