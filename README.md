@@ -1,3 +1,4 @@
+
 # Linux Command Showcase
 
 This project documents the Linux commands I've learned and used. It includes explanations, examples, and use cases.
@@ -165,3 +166,29 @@ Command used:
 📷 [Click here to view the Sort and Uniq command screenshot](./myfolder/docs/images/CM2-3-4.png)
 📷 [Click here to view the Comparison screenshot](./myfolder/docs/images/Comparison-proof.png)
 📷 [Click here to view the Diff command using option c screenshot](./myfolder/docs/images/option-c-diff.png)
+
+# Linux Basic Regex Search Examples
+
+This contains a collection of useful regular expression search patterns using the `grep` command
+
+### Finding files starting with `s` and ending with file:
+ `ls | grep -E '^s.*file$'`
+
+### Find filenames with `t` as the second letter:
+ `ls | grep -E '^.t'`
+
+### Match timestamps in logs file:
+ `grep -E '[0-9][0-9]:[0-9][0-9]:[0-9][0-9]' logs.txt`
+
+### Find matches for failed passwords in the suidfile:
+`grep -E -w 'Failed password' suidfile`
+
+### Print only matching word:
+`grep -oE 'UFW|ALLOW' suigfile`
+
+### Repetition of characters 
+`grep -E 'a{1,3}' countries`
+
+📷 [Click here to view Linux Basic Regex screenshot](./myfolder/docs/images/linux-basic-regex.png)
+
+
