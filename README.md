@@ -153,6 +153,7 @@ Command used: `uniq countries`
 I only ended up sorting the countries file so it still has repeated values then I stored the unique values in a file called singlecountries using the command in the NOTE section I created a file with the exact same content on singlecountries and stored it in a file called countries201. These are the files I would be using for my comparison excercise.
 
 Command used: 
+
 `diff countries201 singlecountries` no output was given cause there is no difference
 
 `sdiff countries201 singlecountries` gave me the output of both files side by side so I can see there is no difference 
@@ -191,4 +192,39 @@ This contains a collection of useful regular expression search patterns using th
 
 📷 [Click here to view Linux Basic Regex screenshot](./myfolder/docs/images/linux-basic-regex.png)
 
+# Archive, Compression, Decompression, Backup
 
+### Archiving with tar
+
+Command used: `tar --create --file archive.tar tarfile` to create the archive then use `tar --append --file archive.tar tarfile1 tarfile2` to add files
+
+**To list contents without extracting** use `--list` option
+
+**To extract** use `--extract` option, extract into a directory by using `--directory tarfiles`
+
+### Comprdession & Decompression
+
+Using `gzip` , `bzip2` and  `x2` to compress only files and `gunzip`, `bunzip`, `unxz` to decompress respectively 
+
+Command used: `gzip countries` option `keep` can be used to keep original file compressed
+
+Command used: `gunzip countries` 
+
+Zip command can be used for files and directories 
+
+Command used: `zip zipfolder.zip tarfiles/`
+
+**To list content without extraction** `unzip -l zipfolder.zip`
+
+**To unzip** `unzip zipfolder.zip`
+
+### Backup
+
+I want to backup my files on the user debbie to another folder under the user david 
+
+Command used: `rsync -av /home/debbie/ /home/david/documentbackup/`
+
+📷 [Click here to view Archive screenshot](./myfolder/docs/images/archive-proof.png)
+📷 [Click here to view Compression Decompresion screenshot](./myfolder/docs/images/compression-decompression.png)
+📷 [Click here to view Zip and backup screenshot](./myfolder/docs/images/zip-and-backup.png)
+📷 [Click here to view Backup proof screenshot](./myfolder/docs/images/backup-proof.png)
