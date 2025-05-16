@@ -1,4 +1,5 @@
 
+
 # Linux Command Showcase
 
 This project documents the Linux commands I've learned and used. It includes explanations, examples, and use cases.
@@ -202,7 +203,7 @@ Command used: `tar --create --file archive.tar tarfile` to create the archive th
 
 **To extract** use `--extract` option, extract into a directory by using `--directory tarfiles`
 
-### Comprdession & Decompression
+### Compression & Decompression
 
 Using `gzip` , `bzip2` and  `x2` to compress only files and `gunzip`, `bunzip`, `unxz` to decompress respectively 
 
@@ -228,3 +229,18 @@ Command used: `rsync -av /home/debbie/ /home/david/documentbackup/`
 📷 [Click here to view Compression Decompresion screenshot](./myfolder/docs/images/compression-decompression.png)
 📷 [Click here to view Zip and backup screenshot](./myfolder/docs/images/zip-and-backup.png)
 📷 [Click here to view Backup proof screenshot](./myfolder/docs/images/backup-proof.png)
+
+# SSL Certificate Creation 
+
+To generate a private key and certificate signing request
+
+Command used: `openssl req -newkey rsa:2048 -keyout key.pem -out req.pem`
+
+To generate a self sigined certificate
+
+Command used: `openssl req -x509 -noenc -newkey rsa:4096 -days 365 -keyout myprivate.key -out mycerticate.crt`
+
+
+📷 [Click here to view SSL 1 screenshot](./myfolder/docs/images/privatekey-request-ssl.png)
+📷 [Click here to view SSL 2 screenshot](./myfolder/docs/images/selfsigned-ssl.png)
+
