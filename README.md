@@ -4,7 +4,7 @@ This project documents the Linux commands I've learned and used. It includes exp
 
 ## what is inside
 
-- [Essential Linux Commands](Essential-Commands.md)
+- [Essential Linux Commands](/mydocumentation/Essential-Commands.md)
 - Operations Deployment
 - Users and Groups
 - Networking
