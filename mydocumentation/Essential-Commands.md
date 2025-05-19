@@ -1,29 +1,16 @@
 
-
-# Linux Command Showcase
-
-This project documents the Linux commands I've learned and used. It includes explanations, examples, and use cases.
-
-## what is inside
-
-- Essential Linux commands
-- Operations Deployment
-- Users and Groups
-- Networking
-- Storage
-
-Essential Commands
+# Essential Commands
  
-# Hard links and Soft links
+## Hard links and Soft links
 
 In this project, I demonstrate how to create hard and soft links in Linux. A hard link is a pointer to a file, and a soft (symbolic) link is like a shortcut. Here’s how I created a hard link for an image file.
 
-## Task 1 hard link:
+### Task 1 hard link:
 I created a hard link for an image of a rose located in my `image` folder under `docs` to be linked to `myfolder` for the `david`
 user.
 
 
-### Steps taken:
+#### Steps taken:
  1 First I had to create the new user david using  `sudo useradd david`
  	
  2 Then use mkdir to create the new folder myfolder and images
@@ -32,42 +19,42 @@ user.
 
 📷 [Click here to view the hardlink screenshot](./myfolder/docs/images/hardlink-proof.png)
 
-## Task 2 soft link:
+### Task 2 soft link:
 Since soft link is not limited to files like hard links I am making a soft link of `myfolder` under the user `debbie` to `myfolder` in the user `david`
 
 Command used: `sudo ln -s /home/debbie/linux-commands-showcase/myfolder /home/david/myfolder` 
  
 📷 [Click here to view the softlink screenshot](./myfolder/docs/images/softlink-proof.png)
 
-# Special Permissions in Linux: SUID, SGID, and Sticky Bit
+## Special Permissions in Linux: SUID, SGID, and Sticky Bit
 
-## Task 1 SUID (Set User ID)  
+### Task 1 SUID (Set User ID)  
 
 Allows users to run an executable file as if they are the owner of the file
 
-### Steps taken:
+#### Steps taken:
 
 1 Create a file named suidfile using command touch 
 
 2 using `chmod 4664 suidfile`
 
 
-## Task 2 SUIG (Set Group ID)
+### Task 2 SUIG (Set Group ID)
 
 When set on a directory, all new files inside it inherit the group of the directory, not the user’s default group.
 
 
-### Steps taken:
+#### Steps taken:
 
 1 Create a file named suigfile using command touch
 
 2 using `chmod 2664 suidfile`
 
-## Task 3 Sticky bit 
+### Task 3 Sticky bit 
 Used on shared directories to allow users to create files but only delete their own files.
 
 
-### Steps taken:
+#### Steps taken:
 
 1 Create a file named suigfile using command touch
 
@@ -77,21 +64,21 @@ Note I did not add execute permissions for any user groups which is why the perm
 
 📷 [Click here to view the Special Permissions Proof](./myfolder/docs/images/special-permissions-proof.png)
 
-# Filtering files based on size, name, permissions and time 
+## Filtering files based on size, name, permissions and time 
 
-## by size
+### by size
 
 Command used: `find . -size +1k` to find files more than 1 kilobyte for less than 1 kilobyte use `-1k` 
 
-## by name
+### by name
 
 Command used: `find . -name 'suigfile'`  I can also use `-i` to make it not case sensitive 
 
-## by file type
+### by file type
 
 Command used: `find . -name '*.png'`
 
-## by permission
+### by permission
 
 Command used: `find . -perm /4000` to find files with SUID permission and `2000` and `1000` for SUIG and Sticky bit permissions
 
@@ -99,7 +86,7 @@ To find for any special permissions use `7000` because the value of all permissi
 
 Also `/4000` means any of these permissions `-4000` at least these permissions and `4000` exactly those permissions
 
-## by time
+### by time
 
 Command used: `find . -mtime -2` finds files modified in the last 2 days to find for more than 2 days use `+2`
 
@@ -107,11 +94,11 @@ Command used: `find . -mtime -2` finds files modified in the last 2 days to find
 
 `find . -atime -2` finds files based on last access in this case that is in the last 2 days `+2` would mean more than 2 days
 
-## by type
+### by type
 
 Command used: `find . -type f` this is to find regular files `d` to find directories 
 
-## Filtering with and, or, not 
+### Filtering with and, or, not 
 
 Commands used: 
 
@@ -124,32 +111,32 @@ Commands used:
 📷 [Click here to view the Filter the type, OR, NOT screenshot](./myfolder/docs/images/filter-proof3.png)
 📷 [Click here to view the  AND filter screenshot](./myfolder/docs/images/and-filter-proof.png)
 
-# Compare & Manipulate file content
+## Compare & Manipulate file content
 
-## Search and replace a particular word in a file
+### Search and replace a particular word in a file
 
 Command used: `sed 's/June/April/g' logs.txt` however this just modifies the file it doesnt do any permanent damage unless I use option `-i`
 
-## To cut and extract information from a file
+### To cut and extract information from a file
 
 Command used: `cut -d " " -f 3 logs.txt > time.txt` to extract a copy of the 3rd column in logs.txt file which storres the value of times and place in another file the time.txt file
 
-## To cut and extract information from a file
+### To cut and extract information from a file
 
 
 Command used: `cut -d " " -f 3 logs.txt > time.txt` to extract a copy of the 3rd column in logs.txt file which storres the value of times and place in another file the time.txt file
 
-## Arranging files alphabetically
+### Arranging files alphabetically
 
 Command used: `sort countries` you can use option `-o` to overwrite the output in an existing file so that I dont have to create a new file again for arranged countries `sort countries -o countries`
 
-## Removing repeating lines nxt to each other
+### Removing repeating lines nxt to each other
 
 Command used: `uniq countries`
 
 **NOTE** these 2 commands could have been combined to give the same output `sort countries | uniq` also know that it was neccessary to sort so repeating countries would be on lines nxt to each other then we we could apply uniq command
 
-## Comparison
+### Comparison
 
 I only ended up sorting the countries file so it still has repeated values then I stored the unique values in a file called singlecountries using the command in the NOTE section I created a file with the exact same content on singlecountries and stored it in a file called countries201. These are the files I would be using for my comparison excercise.
 
@@ -169,7 +156,7 @@ Command used:
 📷 [Click here to view the Comparison screenshot](./myfolder/docs/images/Comparison-proof.png)
 📷 [Click here to view the Diff command using option c screenshot](./myfolder/docs/images/option-c-diff.png)
 
-# Linux Basic Regex Search Examples
+## Linux Basic Regex Search Examples
 
 This contains a collection of useful regular expression search patterns using the `grep` command
 
@@ -193,7 +180,7 @@ This contains a collection of useful regular expression search patterns using th
 
 📷 [Click here to view Linux Basic Regex screenshot](./myfolder/docs/images/linux-basic-regex.png)
 
-# Archive, Compression, Decompression, Backup
+## Archive, Compression, Decompression, Backup
 
 ### Archiving with tar
 
@@ -230,7 +217,7 @@ Command used: `rsync -av /home/debbie/ /home/david/documentbackup/`
 📷 [Click here to view Zip and backup screenshot](./myfolder/docs/images/zip-and-backup.png)
 📷 [Click here to view Backup proof screenshot](./myfolder/docs/images/backup-proof.png)
 
-# SSL Certificate Creation 
+## SSL Certificate Creation 
 
 To generate a private key and certificate signing request
 
