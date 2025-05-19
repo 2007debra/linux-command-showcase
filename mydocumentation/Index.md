@@ -1,0 +1,11 @@
+# Linux Command Showcase
+
+This project documents the Linux commands I've learned and used. It includes explanations, examples, and use cases.
+
+## what is inside
+
+- [Essential Linux Commands](Essential-Commands.md)
+- Operations Deployment
+- Users and Groups
+- Networking
+- Storage
