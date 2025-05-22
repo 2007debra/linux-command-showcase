@@ -231,3 +231,4 @@ Command used: `openssl req -x509 -noenc -newkey rsa:4096 -days 365 -keyout mypri
 📷 [Click here to view SSL 1 screenshot](./myfolder/docs/images/privatekey-request-ssl.png)
 📷 [Click here to view SSL 2 screenshot](./myfolder/docs/images/selfsigned-ssl.png)
 
+[Back to README](../README.md)
