@@ -32,4 +32,22 @@ To execute file: `./simple_script.sh`
 
 ## LOCATE AND ANALYSE SYSTEM LOG FILES
 
+To view entire log file: `cat /var/log/syslog`
 
+To get real time updates: `tail -f /var/log/syslog`
+
+Using `journalctl` to query and view logs
+
+ 
+- `journalctl -u ssh`  view SSH service logs
+- `journalctl -b 0` to see logs generated since current boot (to see previous boot use `-1`)
+- `journalctl -S 14:00 -U 15:00` to see logs from 2pm to 3pm can be used for dates too
+- `journalctl _COMM=sudo` to see logs related to sudo activity
+- `journalctl -p err` show only error-level logs (other options include: emerg, alert, crit, emerg, warning etc)
+
+
+**OTHERS**
+- `last` to see login history
+- `lastlog` shows when each user last logged in the last time
+
+📷 [Click here to view the log analysis screenshot](operation-images/using-journalctl.png)
