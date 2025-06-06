@@ -17,14 +17,14 @@ user.
 
  3 Now I can use my ln command to create the hard link `sudo  ln /home/debbie/linux-commands-showcase/myfolder/docs/images/rose.jpeg /home/david/myfolder/images`
 
-📷 [Click here to view the hardlink screenshot](../myfolder/docs/images/hardlink-proof.png)
+![Click here to view the hardlink screenshot](../myfolder/docs/images/hardlink-proof.png)
 
 ### Task 2 soft link:
 Since soft link is not limited to files like hard links I am making a soft link of `myfolder` under the user `debbie` to `myfolder` in the user `david`
 
 Command used: `sudo ln -s /home/debbie/linux-commands-showcase/myfolder /home/david/myfolder` 
  
-📷 [Click here to view the softlink screenshot](../myfolder/docs/images/softlink-proof.png)
+![Click here to view the softlink screenshot](../myfolder/docs/images/softlink-proof.png)
 
 ## Special Permissions in Linux: SUID, SGID, and Sticky Bit
 
@@ -62,7 +62,7 @@ Used on shared directories to allow users to create files but only delete their 
 
 Note I did not add execute permissions for any user groups which is why the permissions have been capitalised
 
-📷 [Click here to view the Special Permissions Proof](../myfolder/docs/images/special-permissions-proof.png)
+![Click here to view the Special Permissions Proof](../myfolder/docs/images/special-permissions-proof.png)
 
 ## Filtering files based on size, name, permissions and time 
 
@@ -107,9 +107,9 @@ Commands used:
 `find . -not -name 's*'` the `not` option shows that this is a not operator 
 
 
-📷 [Click here to view the Filter screenshot](../myfolder/docs/images/filter-proof.png)
-📷 [Click here to view the Filter the type, OR, NOT screenshot](../myfolder/docs/images/filter-proof3.png)
-📷 [Click here to view the  AND filter screenshot](../myfolder/docs/images/and-filter-proof.png)
+![Click here to view the Filter screenshot](../myfolder/docs/images/filter-proof.png)
+![Click here to view the Filter the type, OR, NOT screenshot](../myfolder/docs/images/filter-proof3.png)
+![Click here to view the  AND filter screenshot](../myfolder/docs/images/and-filter-proof.png)
 
 ## Compare & Manipulate file content
 
@@ -150,11 +150,11 @@ Command used:
 
 `sdiff countries countries201` shows both files side by side and what is missing in this line that is present in the other line
  
-📷 [Click here to view the Search and Replace screenshot](../myfolder/docs/images/search-and-replace.png)
-📷 [Click here to view the Cut and Extract screenshot](../myfolder/docs/images/cut-extract.png)
-📷 [Click here to view the Sort and Uniq command screenshot](../myfolder/docs/images/CM2-3-4.png)
-📷 [Click here to view the Comparison screenshot](../myfolder/docs/images/Comparison-proof.png)
-📷 [Click here to view the Diff command using option c screenshot](../myfolder/docs/images/option-c-diff.png)
+![Click here to view the Search and Replace screenshot](../myfolder/docs/images/search-and-replace.png)
+![Click here to view the Cut and Extract screenshot](../myfolder/docs/images/cut-extract.png)
+![Click here to view the Sort and Uniq command screenshot](../myfolder/docs/images/CM2-3-4.png)
+![Click here to view the Comparison screenshot](../myfolder/docs/images/Comparison-proof.png)
+![Click here to view the Diff command using option c screenshot](../myfolder/docs/images/option-c-diff.png)
 
 ## Linux Basic Regex Search Examples
 
@@ -178,7 +178,7 @@ This contains a collection of useful regular expression search patterns using th
 ### Repetition of characters 
 `grep -E 'a{1,3}' countries`
 
-📷 [Click here to view Linux Basic Regex screenshot](../myfolder/docs/images/linux-basic-regex.png)
+![Click here to view Linux Basic Regex screenshot](../myfolder/docs/images/linux-basic-regex.png)
 
 ## Archive, Compression, Decompression, Backup
 
@@ -212,10 +212,10 @@ I want to backup my files on the user debbie to another folder under the user da
 
 Command used: `rsync -av /home/debbie/ /home/david/documentbackup/`
 
-📷 [Click here to view Archive screenshot](../myfolder/docs/images/archive-proof.png)
-📷 [Click here to view Compression Decompresion screenshot](../myfolder/docs/images/compression-decompression.png)
-📷 [Click here to view Zip and backup screenshot](../myfolder/docs/images/zip-and-backup.png)
-📷 [Click here to view Backup proof screenshot](../myfolder/docs/images/backup-proof.png)
+![Click here to view Archive screenshot](../myfolder/docs/images/archive-proof.png)
+![Click here to view Compression Decompresion screenshot](../myfolder/docs/images/compression-decompression.png)
+![Click here to view Zip and backup screenshot](../myfolder/docs/images/zip-and-backup.png)
+![Click here to view Backup proof screenshot](../myfolder/docs/images/backup-proof.png)
 
 ## SSL Certificate Creation 
 
@@ -228,7 +228,7 @@ To generate a self sigined certificate
 Command used: `openssl req -x509 -noenc -newkey rsa:4096 -days 365 -keyout myprivate.key -out mycerticate.crt`
 
 
-📷 [Click here to view SSL 1 screenshot](../myfolder/docs/images/privatekey-request-ssl.png)
-📷 [Click here to view SSL 2 screenshot](../myfolder/docs/images/selfsigned-ssl.png)
+![Click here to view SSL 1 screenshot](../myfolder/docs/images/privatekey-request-ssl.png)
+![Click here to view SSL 2 screenshot](../myfolder/docs/images/selfsigned-ssl.png)
 
 [Back to README](../README.md)
