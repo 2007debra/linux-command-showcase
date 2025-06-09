@@ -121,11 +121,6 @@ Command used: `sed 's/June/April/g' logs.txt` however this just modifies the fil
 
 Command used: `cut -d " " -f 3 logs.txt > time.txt` to extract a copy of the 3rd column in logs.txt file which storres the value of times and place in another file the time.txt file
 
-### To cut and extract information from a file
-
-
-Command used: `cut -d " " -f 3 logs.txt > time.txt` to extract a copy of the 3rd column in logs.txt file which storres the value of times and place in another file the time.txt file
-
 ### Arranging files alphabetically
 
 Command used: `sort countries` you can use option `-o` to overwrite the output in an existing file so that I dont have to create a new file again for arranged countries `sort countries -o countries`
