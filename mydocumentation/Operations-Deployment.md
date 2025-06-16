@@ -50,4 +50,4 @@ Using `journalctl` to query and view logs
 - `last` to see login history
 - `lastlog` shows when each user last logged in the last time
 
-📷 [Click here to view the log analysis screenshot](operation-images/using-journalctl.png)
+![Click here to view the log analysis screenshot](operation-images/using-journalctl.png)
