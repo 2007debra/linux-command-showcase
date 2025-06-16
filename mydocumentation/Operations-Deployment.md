@@ -22,13 +22,13 @@ Command used: `touch simple_script.sh`
 
 Then open the file: `nano simple_script.sh`
 
-📷 [Click here to view the script command screenshot](operation-images/script-command.png)
+![Click here to view the script command screenshot](operation-images/script-command.png)
 
 Then: `chmod +x simple_script.sh`
 
 To execute file: `./simple_script.sh`
 
-📷 [Click here to view the script result screenshot](operation-images/script-result.png)
+![Click here to view the script result screenshot](operation-images/script-result.png)
 
 ## LOCATE AND ANALYSE SYSTEM LOG FILES
 
