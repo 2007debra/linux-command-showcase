@@ -108,7 +108,9 @@ Commands used:
 
 
 📷 [Click here to view the Filter screenshot](../myfolder/docs/images/filter-proof.png)
+
 📷 [Click here to view the Filter the type, OR, NOT screenshot](../myfolder/docs/images/filter-proof3.png)
+
 📷 [Click here to view the  AND filter screenshot](../myfolder/docs/images/and-filter-proof.png)
 
 ## Compare & Manipulate file content
@@ -151,9 +153,13 @@ Command used:
 `sdiff countries countries201` shows both files side by side and what is missing in this line that is present in the other line
  
 📷 [Click here to view the Search and Replace screenshot](../myfolder/docs/images/search-and-replace.png)
+
 📷 [Click here to view the Cut and Extract screenshot](../myfolder/docs/images/cut-extract.png)
+
 📷 [Click here to view the Sort and Uniq command screenshot](../myfolder/docs/images/CM2-3-4.png)
+
 📷 [Click here to view the Comparison screenshot](../myfolder/docs/images/Comparison-proof.png)
+
 📷 [Click here to view the Diff command using option c screenshot](../myfolder/docs/images/option-c-diff.png)
 
 ## Linux Basic Regex Search Examples
@@ -213,8 +219,11 @@ I want to backup my files on the user debbie to another folder under the user da
 Command used: `rsync -av /home/debbie/ /home/david/documentbackup/`
 
 📷 [Click here to view Archive screenshot](../myfolder/docs/images/archive-proof.png)
+
 📷 [Click here to view Compression Decompresion screenshot](../myfolder/docs/images/compression-decompression.png)
+
 📷 [Click here to view Zip and backup screenshot](../myfolder/docs/images/zip-and-backup.png)
+
 📷 [Click here to view Backup proof screenshot](../myfolder/docs/images/backup-proof.png)
 
 ## SSL Certificate Creation 
@@ -229,6 +238,7 @@ Command used: `openssl req -x509 -noenc -newkey rsa:4096 -days 365 -keyout mypri
 
 
 📷 [Click here to view SSL 1 screenshot](../myfolder/docs/images/privatekey-request-ssl.png)
+
 📷 [Click here to view SSL 2 screenshot](../myfolder/docs/images/selfsigned-ssl.png)
 
 [Back to README](../README.md)

@@ -22,13 +22,13 @@ Command used: `touch simple_script.sh`
 
 Then open the file: `nano simple_script.sh`
 
-📷 [Click here to view the script command screenshot](operation-images/script-command.png)
+![Click here to view the script command screenshot](operation-images/script-command.png)
 
 Then: `chmod +x simple_script.sh`
 
 To execute file: `./simple_script.sh`
 
-📷 [Click here to view the script result screenshot](operation-images/script-result.png)
+![Click here to view the script result screenshot](operation-images/script-result.png)
 
 ## LOCATE AND ANALYSE SYSTEM LOG FILES
 
@@ -50,4 +50,22 @@ Using `journalctl` to query and view logs
 - `last` to see login history
 - `lastlog` shows when each user last logged in the last time
 
-📷 [Click here to view the log analysis screenshot](operation-images/using-journalctl.png)
+![Click here to view the log analysis screenshot](operation-images/using-journalctl.png)
+
+## Scheduling Tasks to run at a set date and time 
+
+### USING CRON
+
+To understand the cron tab syntax I used the command : `cat /etc/crontab`
+
+I wanted to use the `touch` command in my cron tab to comstantly update a file so i used `which touch` to know the path of the command and add to the crontab so it can carry it out
+
+I also created another command in my cron tab to run a script at `2:30` and store the output in a file called `logs2.txt`
+
+![Click here to view the log analysis screenshot](operation-images/crontab.png)
+
+![Click here to view the log analysis screenshot](operation-images/crontab-command.png)
+
+### USING ANACRON
+
+
