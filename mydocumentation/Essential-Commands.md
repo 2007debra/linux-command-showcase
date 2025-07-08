@@ -107,9 +107,17 @@ Commands used:
 `find . -not -name 's*'` the `not` option shows that this is a not operator 
 
 
+<<<<<<< HEAD
 ![Click here to view the Filter screenshot](../myfolder/docs/images/filter-proof.png)
 ![Click here to view the Filter the type, OR, NOT screenshot](../myfolder/docs/images/filter-proof3.png)
 ![Click here to view the  AND filter screenshot](../myfolder/docs/images/and-filter-proof.png)
+=======
+📷 [Click here to view the Filter screenshot](../myfolder/docs/images/filter-proof.png)
+
+📷 [Click here to view the Filter the type, OR, NOT screenshot](../myfolder/docs/images/filter-proof3.png)
+
+📷 [Click here to view the  AND filter screenshot](../myfolder/docs/images/and-filter-proof.png)
+>>>>>>> 11d46c7 (UPDATE)
 
 ## Compare & Manipulate file content
 
@@ -145,11 +153,23 @@ Command used:
 
 `sdiff countries countries201` shows both files side by side and what is missing in this line that is present in the other line
  
+<<<<<<< HEAD
 ![Click here to view the Search and Replace screenshot](../myfolder/docs/images/search-and-replace.png)
 ![Click here to view the Cut and Extract screenshot](../myfolder/docs/images/cut-extract.png)
 ![Click here to view the Sort and Uniq command screenshot](../myfolder/docs/images/CM2-3-4.png)
 ![Click here to view the Comparison screenshot](../myfolder/docs/images/Comparison-proof.png)
 ![Click here to view the Diff command using option c screenshot](../myfolder/docs/images/option-c-diff.png)
+=======
+📷 [Click here to view the Search and Replace screenshot](../myfolder/docs/images/search-and-replace.png)
+
+📷 [Click here to view the Cut and Extract screenshot](../myfolder/docs/images/cut-extract.png)
+
+📷 [Click here to view the Sort and Uniq command screenshot](../myfolder/docs/images/CM2-3-4.png)
+
+📷 [Click here to view the Comparison screenshot](../myfolder/docs/images/Comparison-proof.png)
+
+📷 [Click here to view the Diff command using option c screenshot](../myfolder/docs/images/option-c-diff.png)
+>>>>>>> 11d46c7 (UPDATE)
 
 ## Linux Basic Regex Search Examples
 
@@ -207,10 +227,20 @@ I want to backup my files on the user debbie to another folder under the user da
 
 Command used: `rsync -av /home/debbie/ /home/david/documentbackup/`
 
+<<<<<<< HEAD
 ![Click here to view Archive screenshot](../myfolder/docs/images/archive-proof.png)
 ![Click here to view Compression Decompresion screenshot](../myfolder/docs/images/compression-decompression.png)
 ![Click here to view Zip and backup screenshot](../myfolder/docs/images/zip-and-backup.png)
 ![Click here to view Backup proof screenshot](../myfolder/docs/images/backup-proof.png)
+=======
+📷 [Click here to view Archive screenshot](../myfolder/docs/images/archive-proof.png)
+
+📷 [Click here to view Compression Decompresion screenshot](../myfolder/docs/images/compression-decompression.png)
+
+📷 [Click here to view Zip and backup screenshot](../myfolder/docs/images/zip-and-backup.png)
+
+📷 [Click here to view Backup proof screenshot](../myfolder/docs/images/backup-proof.png)
+>>>>>>> 11d46c7 (UPDATE)
 
 ## SSL Certificate Creation 
 
@@ -223,7 +253,13 @@ To generate a self sigined certificate
 Command used: `openssl req -x509 -noenc -newkey rsa:4096 -days 365 -keyout myprivate.key -out mycerticate.crt`
 
 
+<<<<<<< HEAD
 ![Click here to view SSL 1 screenshot](../myfolder/docs/images/privatekey-request-ssl.png)
 ![Click here to view SSL 2 screenshot](../myfolder/docs/images/selfsigned-ssl.png)
+=======
+📷 [Click here to view SSL 1 screenshot](../myfolder/docs/images/privatekey-request-ssl.png)
+
+📷 [Click here to view SSL 2 screenshot](../myfolder/docs/images/selfsigned-ssl.png)
+>>>>>>> 11d46c7 (UPDATE)
 
 [Back to README](../README.md)

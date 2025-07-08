@@ -1,0 +1,5 @@
+/bin/sh: 1: /home/debra/linux-commands-showcase/myfolder/docs/simple_script: not found
+Good day, !
+Today is: Mon Jul  7 01:31:01 AM UTC 2025
+You are in: /home/debra
+The folder 'images' is not in this directory. 

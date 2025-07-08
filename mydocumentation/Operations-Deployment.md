@@ -51,3 +51,31 @@ Using `journalctl` to query and view logs
 - `lastlog` shows when each user last logged in the last time
 
 ![Click here to view the log analysis screenshot](operation-images/using-journalctl.png)
+<<<<<<< HEAD
+=======
+
+## Scheduling Tasks to run at a set date and time 
+
+### USING CRON
+
+To understand the cron tab syntax I used the command : `cat /etc/crontab`
+
+![Click here to view the log analysis screenshot](operation-images/crontab.png)
+
+Edit Crontab
+
+Command used: `crontab -e`
+
+Know path of touch command so it can be used in crontab
+
+Command used: `which touch` 
+
+Run a script by 1:22am every morning and store the output in a file called logs2.txt
+
+![Click here to view the log analysis screenshot](operation-images/crontab-command.png)
+
+Used ls -l command to check 
+
+![proof](operation-images/crontabevi.png)
+
+### 
