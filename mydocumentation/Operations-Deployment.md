@@ -56,16 +56,32 @@ Using `journalctl` to query and view logs
 
 ### USING CRON
 
-To understand the cron tab syntax I used the command : `cat /etc/crontab`
+To understand the cron tab syntax 
 
-I wanted to use the `touch` command in my cron tab to comstantly update a file so i used `which touch` to know the path of the command and add to the crontab so it can carry it out
+Command used: `cat /etc/crontab`
 
-I also created another command in my cron tab to run a script at `2:30` and store the output in a file called `logs2.txt`
+To edit crontab
+
+Command used: `crontab -e`
 
 ![Click here to view the log analysis screenshot](operation-images/crontab.png)
 
+To use touch command path to command must be added to the crontab
+
+Command used to find touch path: `which touch` 
+
+My crontab command:
+
 ![Click here to view the log analysis screenshot](operation-images/crontab-command.png)
 
-### USING ANACRON
+`2>&1` helps us to send error crontab may have running the file to the document 
+
+Using `ls -l` command to see that the 2 documents are created at the respective times specified
+
+![Evidence 1](operation-images/crontabevi1.png)
+
+Using `nano logs2.txt` to see the output of the script has been run succefully
+
+![Evidence 2](operation-images/crontabevi2.png)
 
 
